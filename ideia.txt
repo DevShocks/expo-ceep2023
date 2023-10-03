@@ -1,0 +1,31 @@
+site de controle de notas, avisos e mensagens sobre o tcc:
+
+-sistema de login
+-acesso de admin
+-controle sobre sua situação (para aluno)
+-avisos/mensagens(para aluno)
+-opções para o admin escolher como está o desempenho do aluno
+-opção para o admin mandar mensagem para o aluno
+
+
+-admin = Célia
+
+
+
+
+
+
+ligação banco =
+
+<?php
+
+$hostname = "localhost";
+$bancodedados = "dbfeira";
+$usuario = "root";
+$senha = "123";
+
+$bd_feira = new mysqli($hostname, $usuario,  $bancodedados);
+if ($bd_feira->connect_errno) {
+    echo "Falha ao conectar: (" . $bd_feira->connect_errno . ")" . $bd_feira->connect_error;
+}
+?>
